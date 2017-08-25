@@ -1,0 +1,38 @@
+{
+    "name": "Page",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "title": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string"
+        },
+        "isActive": {
+            "type": "boolean"
+        },
+        "ownerIds": {
+            "type": [
+                "any"
+            ]
+        }
+    },
+    "validations": [],
+    "relations": {
+        "trips": {
+            "type": "referencesMany",
+            "model": "Trip",
+            "foreignKey": "tripIds",
+            "options": {
+                "validate": true,
+                "forceId": false
+            }
+        }
+    },
+    "acls": [],
+    "methods": {}
+}

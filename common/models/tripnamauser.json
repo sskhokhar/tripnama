@@ -1,0 +1,51 @@
+{
+    "name": "Tripnamauser",
+    "base": "User",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "firstName": {
+            "type": "string"
+        },
+        "lastName": {
+            "type": "string"
+        },
+        "phoneNumber": {
+            "type": "string"
+        },
+        "CNIC": {
+            "type": "string"
+        },
+        "address": {
+            "type": "string"
+        },
+        "isActive": {
+            "type": "boolean"
+        }
+    },
+    "validations": [],
+    "relations": {
+        "pages": {
+            "type": "referencesMany",
+            "model": "Page",
+            "foreignKey": "pageIds",
+            "options": {
+                "validate": true,
+                "forceId": false
+            }
+        },
+        "trips": {
+            "type": "referencesMany",
+            "model": "Trip",
+            "foreignKey": "tripIds",
+            "options": {
+                "validate": true,
+                "forceId": false
+            }
+        }
+    },
+    "acls": [],
+    "methods": {}
+}

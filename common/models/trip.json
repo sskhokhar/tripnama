@@ -1,0 +1,34 @@
+{
+  "name": "Trip",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "duration": {
+      "type": "string"
+    },
+    "audience": {
+      "type": [
+        "any"
+      ]
+    },
+    "schedule": {
+      "type": "object"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "createdBy": {
+      "type": "any"
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
