@@ -1,19 +1,18 @@
 {
-  "name": "Itinery",
-  "base": "Page",
-  "idInjection": true,
-  "options": {
-    "validateUpsert": true
-  },
-  "properties": {
-    "locations": {
-      "type": [
-        "object"
-      ]
-    }
-  },
-  "validations": [],
-  "relations": {},
-  "acls": [],
-  "methods": {}
+    "name": "Itinery",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "locations": {
+            "type": [
+                "object"
+            ]
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
 }
