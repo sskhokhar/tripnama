@@ -36,10 +36,10 @@
                 "forceId": false
             }
         },
-        "trips": {
+        "posts": {
             "type": "referencesMany",
-            "model": "Trip",
-            "foreignKey": "tripIds",
+            "model": "Post",
+            "foreignKey": "postIds",
             "options": {
                 "validate": true,
                 "forceId": false

@@ -9,24 +9,51 @@
         "title": {
             "type": "string"
         },
+        "description": {
+            "type": "string"
+        },
+        "createdBy": {
+            "type": [
+                "any"
+            ]
+        },
+        "likes": {
+            "type": "number"
+        },
+        "shares": {
+            "type": "number"
+        },
+        "views": {
+            "type": "number"
+        },
+        "reviews": {
+            "type": [
+                "object"
+            ]
+        },
+        "tags": {
+            "type": [
+                "any"
+            ]
+        },
         "type": {
             "type": "string"
         },
         "isActive": {
             "type": "boolean"
         },
-        "ownerIds": {
+        "faqs": {
             "type": [
-                "any"
+                "object"
             ]
         }
     },
     "validations": [],
     "relations": {
-        "trips": {
+        "posts": {
             "type": "referencesMany",
-            "model": "Trip",
-            "foreignKey": "tripIds",
+            "model": "Post",
+            "foreignKey": "postIds",
             "options": {
                 "validate": true,
                 "forceId": false
