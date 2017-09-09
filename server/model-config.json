@@ -36,43 +36,11 @@
         "dataSource": "db",
         "public": false
     },
-    "Tripnamauser": {
-        "dataSource": "mongoDB",
-        "public": true
-    },
-    "Itinery": {
-        "dataSource": "mongoDB",
-        "public": true
-    },
     "IDs": {
         "dataSource": "mongoDB",
         "public": true
     },
     "Tag": {
-        "dataSource": "mongoDB",
-        "public": true
-    },
-    "Commonmodel": {
-        "dataSource": "mongoDB",
-        "public": true
-    },
-    "Country": {
-        "dataSource": "mongoDB",
-        "public": true
-    },
-    "Userpages": {
-        "dataSource": "mongoDB",
-        "public": true
-    },
-    "State": {
-        "dataSource": "mongoDB",
-        "public": true
-    },
-    "City": {
-        "dataSource": "mongoDB",
-        "public": true
-    },
-    "Location": {
         "dataSource": "mongoDB",
         "public": true
     }
