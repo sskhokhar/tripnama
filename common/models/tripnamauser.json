@@ -27,10 +27,10 @@
     },
     "validations": [],
     "relations": {
-        "pages": {
+        "userpages": {
             "type": "referencesMany",
-            "model": "Page",
-            "foreignKey": "pageIds",
+            "model": "Userpages",
+            "foreignKey": "userpageIds",
             "options": {
                 "validate": true,
                 "forceId": false

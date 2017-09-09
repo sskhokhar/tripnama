@@ -56,7 +56,27 @@
     "dataSource": "mongoDB",
     "public": true
   },
-  "Post": {
+  "Commonmodel": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "Country": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "Userpages": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "State": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "City": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "Location": {
     "dataSource": "mongoDB",
     "public": true
   }
