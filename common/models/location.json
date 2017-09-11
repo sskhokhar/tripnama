@@ -1,19 +1,26 @@
 {
-  "name": "Location",
-  "base": "Commonmodel",
-  "idInjection": true,
-  "options": {
-    "validateUpsert": true
-  },
-  "properties": {},
-  "validations": [],
-  "relations": {
-    "city": {
-      "type": "belongsTo",
-      "model": "city",
-      "foreignKey": ""
-    }
-  },
-  "acls": [],
-  "methods": {}
+    "name": "Location",
+    "base": "Commonmodel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "nearby": {
+            "type": [
+                "any"
+            ],
+            "default": []
+        }
+    },
+    "validations": [],
+    "relations": {
+        "city": {
+            "type": "belongsTo",
+            "model": "city",
+            "foreignKey": ""
+        }
+    },
+    "acls": [],
+    "methods": {}
 }
