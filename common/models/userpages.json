@@ -1,0 +1,28 @@
+{
+  "name": "Userpages",
+  "base": "Commonmodel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "posts": {
+      "type": "referencesMany",
+      "model": "Post",
+      "foreignKey": "postIds",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    },
+    "tripnamauser": {
+      "type": "belongsTo",
+      "model": "Tripnamauser",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

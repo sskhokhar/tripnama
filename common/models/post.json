@@ -1,0 +1,33 @@
+{
+  "name": "Post",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "postedBy": {
+      "type": "any"
+    },
+    "images": {
+      "type": [
+        "string"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "likes": {
+      "type": "number"
+    },
+    "comments": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

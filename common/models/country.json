@@ -1,0 +1,23 @@
+{
+  "name": "Country",
+  "base": "Commonmodel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "states": {
+      "type": "referencesMany",
+      "model": "State",
+      "foreignKey": "stateIds",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

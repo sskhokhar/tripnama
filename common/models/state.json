@@ -1,0 +1,28 @@
+{
+  "name": "State",
+  "base": "Commonmodel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "cities": {
+      "type": "referencesMany",
+      "model": "City",
+      "foreignKey": "cityIds",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    },
+    "country": {
+      "type": "belongsTo",
+      "model": "Country",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,61 @@
+{
+    "name": "Commonmodel",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "title": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "createdBy": {
+            "type": [
+                "any"
+            ]
+        },
+        "likes": {
+            "type": "number"
+        },
+        "shares": {
+            "type": "number"
+        },
+        "views": {
+            "type": "number"
+        },
+        "reviews": {
+            "type": [
+                "object"
+            ]
+        },
+        "tags": {
+            "type": [
+                "any"
+            ]
+        },
+        "type": {
+            "type": "string"
+        },
+        "isActive": {
+            "type": "boolean"
+        },
+        "faqs": {
+            "type": [
+                "object"
+            ]
+        },
+        "image": {
+            "type": "string"
+        },
+        "geolocation": {
+            "type": "geopoint"
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+}
