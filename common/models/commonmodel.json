@@ -15,37 +15,45 @@
         "createdBy": {
             "type": [
                 "any"
-            ]
+            ],
+            "default": []
         },
         "likes": {
-            "type": "number"
+            "type": "number",
+            "default": 0
         },
         "shares": {
-            "type": "number"
+            "type": "number",
+            "default": 0
         },
         "views": {
-            "type": "number"
+            "type": "number",
+            "default": 0
         },
         "reviews": {
             "type": [
                 "object"
-            ]
+            ],
+            "default": []
         },
         "tags": {
             "type": [
                 "any"
-            ]
+            ],
+            "default": []
         },
         "type": {
             "type": "string"
         },
         "isActive": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
         },
         "faqs": {
             "type": [
                 "object"
-            ]
+            ],
+            "default": []
         },
         "image": {
             "type": "string"
