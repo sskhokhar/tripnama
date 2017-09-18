@@ -1,22 +1,23 @@
 {
-  "name": "Tag",
-  "base": "PersistedModel",
-  "idInjection": true,
-  "options": {
-    "validateUpsert": true
-  },
-  "properties": {
-    "tag": {
-      "type": "string"
+    "name": "Tag",
+    "base": "PersistedModel",
+    "idInjection": false,
+    "options": {
+        "validateUpsert": true
     },
-    "usingIds": {
-      "type": [
-        "any"
-      ]
-    }
-  },
-  "validations": [],
-  "relations": {},
-  "acls": [],
-  "methods": {}
+    "properties": {
+        "tag": {
+            "type": "string"
+        },
+        "usingIds": {
+            "type": [
+                "any"
+            ],
+            "default": []
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
 }
