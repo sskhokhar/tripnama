@@ -1,51 +1,56 @@
 {
-  "name": "Tripnamauser",
-  "base": "User",
-  "idInjection": true,
-  "options": {
-    "validateUpsert": true
-  },
-  "properties": {
-    "firstName": {
-      "type": "string"
+    "name": "Tripnamauser",
+    "base": "User",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
     },
-    "lastName": {
-      "type": "string"
+    "properties": {
+        "firstName": {
+            "type": "string"
+        },
+        "lastName": {
+            "type": "string"
+        },
+        "phoneNumber": {
+            "type": "string"
+        },
+        "CNIC": {
+            "type": "string"
+        },
+        "address": {
+            "type": "string"
+        },
+        "isActive": {
+            "type": "boolean"
+        }
     },
-    "phoneNumber": {
-      "type": "string"
+    "validations": [],
+    "relations": {
+        "userpages": {
+            "type": "referencesMany",
+            "model": "Userpages",
+            "foreignKey": "userpagesIds",
+            "options": {
+                "validate": true,
+                "forceId": false
+            }
+        },
+        "posts": {
+            "type": "referencesMany",
+            "model": "Post",
+            "foreignKey": "postIds",
+            "options": {
+                "validate": true,
+                "forceId": false
+            }
+        }
     },
-    "CNIC": {
-      "type": "string"
-    },
-    "address": {
-      "type": "string"
-    },
-    "isActive": {
-      "type": "boolean"
-    }
-  },
-  "validations": [],
-  "relations": {
-    "userpages": {
-      "type": "referencesMany",
-      "model": "Userpages",
-      "foreignKey": "userpagesIds",
-      "options": {
-        "validate": true,
-        "forceId": false
-      }
-    },
-    "posts": {
-      "type": "referencesMany",
-      "model": "Post",
-      "foreignKey": "postIds",
-      "options": {
-        "validate": true,
-        "forceId": false
-      }
-    }
-  },
-  "acls": [],
-  "methods": {}
+    "acls": [{
+        "accessType": "*",
+        "principalType": "ROLE",
+        "principalId": "superUser",
+        "permission": "ALLOW"
+    }],
+    "methods": {}
 }
