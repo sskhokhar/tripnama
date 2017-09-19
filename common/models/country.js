@@ -1,5 +1,3 @@
 'use strict';
 
-module.exports = function(Country) {
-
-};
+module.exports = function(Country) {};
