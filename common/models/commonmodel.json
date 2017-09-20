@@ -7,10 +7,12 @@
     },
     "properties": {
         "title": {
-            "type": "string"
+            "type": "string",
+            "required": true
         },
         "description": {
-            "type": "string"
+            "type": "string",
+            "required": true
         },
         "createdBy": {
             "type": [
@@ -59,7 +61,8 @@
             "type": "string"
         },
         "geolocation": {
-            "type": "geopoint"
+            "type": "geopoint",
+            "required": true
         }
     },
     "validations": [],
