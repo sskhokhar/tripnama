@@ -11,6 +11,16 @@
                 "any"
             ],
             "default": []
+        },
+        "spendTime": {
+            "type": "string",
+            "required": true
+        },
+        "openTime": {
+            "type": "string"
+        },
+        "closeTime": {
+            "type": "string"
         }
     },
     "validations": [],
