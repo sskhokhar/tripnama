@@ -17,10 +17,10 @@
             "required": true
         },
         "openTime": {
-            "type": "date"
+            "type": "string"
         },
         "closeTime": {
-            "type": "date"
+            "type": "string"
         }
     },
     "validations": [],
