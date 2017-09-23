@@ -1,23 +1,52 @@
 {
-    "name": "Access_key",
-    "base": "PersistedModel",
-    "idInjection": true,
-    "options": {
-        "validateUpsert": true
+  "name": "Access_key",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "startDate": {
+      "type": "date"
     },
-    "properties": {
-        "startDate": {
-            "type": "date"
-        },
-        "endDate": {
-            "type": "date"
-        },
-        "status": {
-            "type": "boolean"
+    "endDate": {
+      "type": "date"
+    },
+    "status": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "verify": {
+      "accepts": [
+        {
+          "arg": "key",
+          "type": "string",
+          "required": true,
+          "description": "",
+          "http": {
+            "source": "query"
+          }
         }
-    },
-    "validations": [],
-    "relations": {},
-    "acls": [],
-    "methods": {}
+      ],
+      "returns": [
+        {
+          "arg": "message",
+          "type": "string",
+          "root": true,
+          "description": ""
+        }
+      ],
+      "description": "",
+      "http": [
+        {
+          "path": "/verify",
+          "verb": "post"
+        }
+      ]
+    }
+  }
 }
