@@ -6,9 +6,8 @@ module.exports = function(app) {
     for (var index = 0; index < 11; index++) {
         setInterval(function() {
             var a = new Date();
-            console.log(a.getMilliseconds());
-            IDS.push(a.getMilliseconds);
+            console.log(a.getTime());
+            IDS.push(a.getTime());
         }, 2000);
     }
-
 };
