@@ -1,23 +1,23 @@
 {
-  "name": "Access_key",
-  "base": "PersistedModel",
-  "idInjection": true,
-  "options": {
-    "validateUpsert": true
-  },
-  "properties": {
-    "startDate": {
-      "type": "date"
+    "name": "Access_key",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
     },
-    "endDate": {
-      "type": "date"
+    "properties": {
+        "startDate": {
+            "type": "date"
+        },
+        "endDate": {
+            "type": "date"
+        },
+        "status": {
+            "type": "boolean"
+        }
     },
-    "status": {
-      "type": "boolean"
-    }
-  },
-  "validations": [],
-  "relations": {},
-  "acls": [],
-  "methods": {}
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
 }
