@@ -1,19 +1,19 @@
 {
-  "name": "Tag",
+  "name": "Access_key",
   "base": "PersistedModel",
-  "idInjection": false,
+  "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "tag": {
-      "type": "string"
+    "startDate": {
+      "type": "date"
     },
-    "usingIds": {
-      "type": [
-        "any"
-      ],
-      "default": []
+    "endDate": {
+      "type": "date"
+    },
+    "status": {
+      "type": "boolean"
     }
   },
   "validations": [],

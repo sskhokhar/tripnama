@@ -1,36 +1,36 @@
 {
-    "name": "Location",
-    "base": "Commonmodel",
-    "idInjection": true,
-    "options": {
-        "validateUpsert": true
+  "name": "Location",
+  "base": "Commonmodel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nearby": {
+      "type": [
+        "any"
+      ],
+      "default": []
     },
-    "properties": {
-        "nearby": {
-            "type": [
-                "any"
-            ],
-            "default": []
-        },
-        "spendTime": {
-            "type": "string",
-            "required": true
-        },
-        "openTime": {
-            "type": "string"
-        },
-        "closeTime": {
-            "type": "string"
-        }
+    "spendTime": {
+      "type": "string",
+      "required": true
     },
-    "validations": [],
-    "relations": {
-        "city": {
-            "type": "belongsTo",
-            "model": "city",
-            "foreignKey": ""
-        }
+    "openTime": {
+      "type": "string"
     },
-    "acls": [],
-    "methods": {}
+    "closeTime": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "city": {
+      "type": "belongsTo",
+      "model": "city",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
 }

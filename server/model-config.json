@@ -1,83 +1,87 @@
 {
-    "_meta": {
-        "sources": [
-            "loopback/common/models",
-            "loopback/server/models",
-            "../common/models",
-            "./models"
-        ],
-        "mixins": [
-            "loopback/common/mixins",
-            "loopback/server/mixins",
-            "../common/mixins",
-            "./mixins"
-        ]
-    },
-    "User": {
-        "dataSource": "db",
-        "public": false
-    },
-    "AccessToken": {
-        "dataSource": "db",
-        "public": false
-    },
-    "ACL": {
-        "dataSource": "db",
-        "public": false
-    },
-    "RoleMapping": {
-        "dataSource": "db",
-        "public": false,
-        "options": {
-            "strictObjectIDCoercion": true
-        }
-    },
-    "Role": {
-        "dataSource": "db",
-        "public": false
-    },
-    "IDs": {
-        "dataSource": "mongoDB",
-        "public": true
-    },
-    "Tag": {
-        "dataSource": "mongoDB",
-        "public": true
-    },
-    "Tripnamauser": {
-        "dataSource": "mongoDB",
-        "public": true
-    },
-    "Commonmodel": {
-        "dataSource": "mongoDB",
-        "public": false
-    },
-    "Country": {
-        "dataSource": "mongoDB",
-        "public": true
-    },
-    "State": {
-        "dataSource": "mongoDB",
-        "public": true
-    },
-    "City": {
-        "dataSource": "mongoDB",
-        "public": true
-    },
-    "Location": {
-        "dataSource": "mongoDB",
-        "public": true
-    },
-    "Userpages": {
-        "dataSource": "mongoDB",
-        "public": true
-    },
-    "Itinery": {
-        "dataSource": "mongoDB",
-        "public": true
-    },
-    "Post": {
-        "dataSource": "mongoDB",
-        "public": true
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
     }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "IDs": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "Tag": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "Tripnamauser": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "Commonmodel": {
+    "dataSource": "mongoDB",
+    "public": false
+  },
+  "Country": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "State": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "City": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "Location": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "Userpages": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "Itinery": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "Post": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "Access_key": {
+    "dataSource": "mongoDB",
+    "public": true
+  }
 }
