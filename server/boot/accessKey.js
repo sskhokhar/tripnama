@@ -6,8 +6,6 @@ module.exports = function(app) {
     for (var index = 0; index < IDS.length; index++) {
         var obj = {
             id: IDS[index],
-            startDate: new Date(),
-            endDate: new Date() + 10,
             status: false
         }
         Accesskey.create(obj, function(err, succ) {
