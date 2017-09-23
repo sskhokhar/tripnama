@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = function(Accesskey) {
+    Accesskey.validatesUniquenessOf('key', { message: 'Key already exists.' });
     Accesskey.verify = function(key, callback) {
         Accesskey.find({ where: { key: key } }, function(err, success) {
             if (!err) {
